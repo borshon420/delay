@@ -2,6 +2,11 @@
   "name": "delay",
   "version": "0.1.0",
   "private": true,
+  "scripts-jest": {
+    "start": "node ./bin/www",
+    "test": "jest",
+    "test:watch": "npm run test -- --watch"
+},
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
@@ -35,5 +40,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "jest": "^27.4.5"
   }
 }

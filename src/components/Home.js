@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import AllDetails from "./AllDetails";
 
 const Home = () => {
-    const [news, setNews] = useState([]);
+  const [news, setNews] = useState([]);
   const timerRef = useRef(null);
 
   const sendMessage = (e) => {
@@ -13,7 +13,7 @@ const Home = () => {
       () => fetch(url)
       .then((res) => res.json())
       .then((data) => setNews(data.hits)),
-      10000
+      3000
     );
      
   };
